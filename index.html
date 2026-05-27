@@ -18,8 +18,8 @@
             --background: #0f0f0f;
             --card-background: #1a1a1a;
             --text-color: #ffffff;
-            .instapay { background:#FFD700; color:#000; }
-        .instapay:hover { transform:scale(1.05); box-shadow:0 0 20px #FFD700; }
+            --instapay-color: #6A1B9A;
+        
 
         }
 
@@ -144,7 +144,9 @@
     font-weight: bold;
     text-decoration: none;
 }
-
+.instapay {
+            background: var(--instapay-color);
+        }
 
         /* زر التواصل */
         .contact {
@@ -165,6 +167,53 @@
             fill: white;
             margin-left: 10px;
         }
+       .instapay{
+    width: 0px;
+    height: 56px;
+
+    margin: 16px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    background: linear-gradient(90deg,#7b1fd3,#8e24aa);
+
+    border-radius: 350px;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+
+    transition: .3s;
+}
+
+.instapay:hover{
+    transform: scale(1.03);
+}
+
+.instapay img{
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+}
+
+.instapay span{
+    color: rgb(72, 17, 182);
+
+    font-size: 22px;
+    font-weight: bold;
+
+    font-family: Arial, sans-serif;
+
+    letter-spacing: 1px;
+}
+
+    
+    
+
     </style>
     <!-- أيقونات Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -211,12 +260,13 @@ omar_samy_kamal" class="link-btn instagram" target="_blank">
 <a href="mailto:omarsamu5182000@gmail.com" class="gmail-btn">
     <i class="fa-solid fa-envelope"></i>
     راسلني عبر Gmail
-</a></a>
-    </div>
-   </a>
-              <a class="btn instapay" href="https://ipn.eg/S/omsaka/instapay/0nPWY3" target="_blank">
-        <i class="fas fa-money-bill-wave"></i> InstaPay
-    </a>
+</a>
+    
+   
+        <a class="instapay" href="https://ipn.eg/S/omsaka/instapay/0nPWY3" target="_blank">
+    <img src="03b135b8-9ec2-41ad-864b-4bd4219cafbc.png" alt="">
+    <span>instapay</span>
+</a>
   <!-- الفوتر -->
     <footer>
       <p>© <span id="year"></span> <b>omar samy</b> — <span data-lang="rights">All rights reserved2026</span></p>
